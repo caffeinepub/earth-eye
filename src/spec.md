@@ -1,10 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Display the application author name as "WAMIQ AHMAD" in the UI and include standard author metadata in the HTML head.
+**Goal:** Add clear author attribution for the Earth Eye app in the UI and in the HTML metadata.
 
 **Planned changes:**
-- Update the About page footer/credits section to show the author name exactly: "WAMIQ AHMAD", ensuring it remains readable in light/dark themes and responsive on mobile.
-- Add an HTML `<meta name="author" content="WAMIQ AHMAD">` tag to `frontend/index.html` without removing or altering existing meta tags, title, or icons.
+- Update the About page footer/credits area to display the text: `Author: WAMIQ AHMAD`.
+- Add `<meta name="author" content="WAMIQ AHMAD" />` to the application HTML `<head>`.
 
-**User-visible outcome:** Users can see "WAMIQ AHMAD" credited as the application author on the About page, and the app includes author metadata in the document head.
+**User-visible outcome:** On the About page, users can see an explicit English author attribution reading `Author: WAMIQ AHMAD`.

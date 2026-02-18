@@ -1,51 +1,49 @@
 {
   "kind": "build_request",
-  "title": "Set application author name to WAMIQ AHMAD",
+  "title": "Add author name attribution (WAMIQ AHMAD)",
   "projectName": "Earth Eye",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Add the application author name as \"WAMIQ AHMAD\" in a visible place in the UI (About page footer/credits section) so users can see who authored the application.",
+      "text": "Display the application author name as \"WAMIQ AHMAD\" in a visible place in the UI on the About page (footer/credits section).",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-4"
         ],
         "quotes": [
-          "add the author name for the application to WAMIQ AHMAD"
+          "add author name WAMIQ AHMAD"
         ]
       },
       "acceptanceCriteria": [
-        "On the About page, the footer/credits area displays the author name exactly as: \"WAMIQ AHMAD\".",
-        "The author name is readable on both light and dark themes and does not break the existing layout on mobile widths."
+        "On the About page, users can see an explicit author attribution reading \"Author: WAMIQ AHMAD\" in the footer/credits area.",
+        "All user-facing text related to the author attribution is in English."
       ]
     },
     {
       "id": "REQ-2",
-      "text": "Add standard HTML metadata for the application author in the app HTML head with the value \"WAMIQ AHMAD\".",
+      "text": "Add standard HTML metadata for the application author in the app HTML head with the value \"WAMIQ AHMAD\" (meta name=\"author\").",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-4"
         ],
         "quotes": [
-          "add the author name for the application to WAMIQ AHMAD"
+          "add author name WAMIQ AHMAD"
         ]
       },
       "acceptanceCriteria": [
-        "frontend/index.html includes a meta tag for author with content exactly \"WAMIQ AHMAD\".",
-        "No other existing meta tags (description, theme-color), title, or icons are removed."
+        "The generated HTML contains <meta name=\"author\" content=\"WAMIQ AHMAD\" /> in the document <head>."
       ]
     }
   ],
   "constraints": [
-    "Use English for any user-facing text.",
-    "Do not modify files under frontend/src/components/ui or other immutablePaths listed in SYSTEM_CONTEXT."
+    "Do not edit files under frontend/src/components/ui (compose these components instead).",
+    "Do not edit frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx."
   ],
   "nonGoals": [
-    "Do not change the app name (\"Earth Eye\"), logo, or other branding elements.",
-    "Do not add or change backend/canister logic for author information."
+    "Uploading the app to the Google Play Store or generating Play Store assets/listings as part of this change."
   ],
   "imageRequirements": {
     "required": [],
