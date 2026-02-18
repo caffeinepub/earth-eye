@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Project involves building/deploying an application with publish/live URL workflow; user now requests setting application author name.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-add-the-application-author-name-as-wamiq-ahmad-in-a-visible-place-in-the-ui-about-page-footer-credits-section-so-users-can-see-who-authored-the-application",
+      "title": "Add the application author name as \"WAMIQ AHMAD\" in a visible place in the UI (About page footer/credits section) so users can see who authored the application.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-standard-html-metadata-for-the-application-author-in-the-app-html-head-with-the-value-wamiq-ahmad",
+      "title": "Add standard HTML metadata for the application author in the app HTML head with the value \"WAMIQ AHMAD\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Set application author name to \"WAMIQ AHMAD\"",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Earth Eye",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

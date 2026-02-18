@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* Eco-green theme - light mode */
+        --background: 0.98 0.02 145;
+        --foreground: 0.25 0.04 155;
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.04 155;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.04 155;
+        --primary: 0.55 0.15 155;
+        --primary-foreground: 0.98 0.02 145;
+        --secondary: 0.88 0.08 145;
+        --secondary-foreground: 0.25 0.04 155;
+        --muted: 0.92 0.04 145;
+        --muted-foreground: 0.50 0.06 155;
+        --accent: 0.75 0.12 165;
+        --accent-foreground: 0.98 0.02 145;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.88 0.06 145;
+        --input: 0.88 0.06 145;
+        --ring: 0.55 0.15 155;
+        --chart-1: 0.60 0.18 155;
+        --chart-2: 0.65 0.16 175;
+        --chart-3: 0.70 0.14 135;
+        --chart-4: 0.55 0.20 165;
+        --chart-5: 0.50 0.18 145;
+    }
+
+    .dark {
+        --background: 0.18 0.04 155;
+        --foreground: 0.95 0.02 145;
+        --card: 0.22 0.04 155;
+        --card-foreground: 0.95 0.02 145;
+        --popover: 0.20 0.04 155;
+        --popover-foreground: 0.95 0.02 145;
+        --primary: 0.65 0.16 155;
+        --primary-foreground: 0.15 0.04 155;
+        --secondary: 0.28 0.06 155;
+        --secondary-foreground: 0.95 0.02 145;
+        --muted: 0.30 0.05 155;
+        --muted-foreground: 0.65 0.08 145;
+        --accent: 0.40 0.10 165;
+        --accent-foreground: 0.95 0.02 145;
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.95 0 0;
+        --border: 0.30 0.06 155;
+        --input: 0.30 0.06 155;
+        --ring: 0.65 0.16 155;
+        --chart-1: 0.55 0.18 155;
+        --chart-2: 0.60 0.16 175;
+        --chart-3: 0.65 0.14 135;
+        --chart-4: 0.50 0.20 165;
+        --chart-5: 0.45 0.18 145;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

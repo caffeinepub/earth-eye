@@ -1,0 +1,37 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Display and declare application author (WAMIQ AHMAD)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Show the application author name \"WAMIQ AHMAD\" in a visible credits/footer section on the About page without breaking responsive layout or theme readability.",
+      "acceptanceCriteria": [
+        "On the About page, the footer/credits area displays the author name exactly as: \"WAMIQ AHMAD\".",
+        "The author name is readable on both light and dark themes and does not break the existing layout on mobile widths."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "modify",
+          "description": "Update the About page credits/footer Card to include an additional author line that displays exactly \"WAMIQ AHMAD\" (e.g., labeled as author) using existing Tailwind theme tokens/classes so it remains readable in light/dark and wraps cleanly on small screens."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add standard HTML head metadata declaring the application author as \"WAMIQ AHMAD\" while preserving existing head content.",
+      "acceptanceCriteria": [
+        "frontend/index.html includes a meta tag for author with content exactly \"WAMIQ AHMAD\".",
+        "No other existing meta tags (description, theme-color), title, or icons are removed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add a standard <meta name=\"author\" content=\"WAMIQ AHMAD\" /> tag in the document head while keeping all existing meta tags, title, and icon links intact."
+        }
+      ]
+    }
+  ]
+}
